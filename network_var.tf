@@ -7,5 +7,5 @@ variable "subnet_cidr" {
 variable "http_range" {
   description = "Required for Load Balancer working correctly"
   type        = list(any)
-  default     = ["130.211.0.0/22" , "35.191.0.0/16"]
+  default     = ["130.211.0.0/22", "35.191.0.0/16"]
 }
