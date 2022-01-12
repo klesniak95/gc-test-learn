@@ -5,7 +5,7 @@ variable "subnet_cidr" {
 }
 
 variable "http_range" {
-  description = "You can customize range to limit HTTP access"
+  description = "Required for Load Balancer working correctly"
   type        = list(any)
-  default     = ["0.0.0.0/0"]
+  default     = ["130.211.0.0/22" , "35.191.0.0/16"]
 }
